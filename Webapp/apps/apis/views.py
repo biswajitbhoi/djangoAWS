@@ -14,7 +14,8 @@ class ApiTest(APIView):
         Handle GET requests.
         """
         data = {
-            'message': 'Hello, this is a test response from the API2!'
+            'status' : "200",
+            'message': 'Hello, this is a test response from the API3!'
         }
         return Response(data)  # You can also use status=status.HTTP_200_OK if needed
 
